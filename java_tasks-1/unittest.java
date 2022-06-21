@@ -18,7 +18,7 @@ public class unittest {
 
         @Test
         public void shouldReturnFloatValue() {
-            assertEquals(1.05, Solution.getMetreFromCentimetre(105), 0.000001);
+            assertEquals(1, Solution.getMetreFromCentimetre(105), 0.000001);
         }
 
     }
