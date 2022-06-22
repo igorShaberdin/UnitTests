@@ -1,13 +1,15 @@
+import org.junit.jupiter.api.Test;
+
 import static com.sun.tools.javac.main.Option.S;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void main() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void printString() {
         assertEquals("Olla world", Main.printString(String.valueOf(S)));
     }
