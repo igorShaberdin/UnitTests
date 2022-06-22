@@ -1,24 +1,16 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 class MainTest {
 
     @Test
-    void getSeconds() {
+    void shouldReturnCorrectValue() {
+        assertEquals(100, Main.getCountSecondsPassedInCurrentHour(100), 0);
     }
 
     @Test
-    void setSeconds() {
-    }
-
-    @Test
-    void getB() {
-    }
-
-    @Test
-    void setB() {
-    }
-
-    @Test
-    void main() {
+    void shouldReturnZeroValue() {
+        assertEquals(0, Main.getCountSecondsPassedInCurrentHour(0), 0);
     }
 }
