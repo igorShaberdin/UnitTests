@@ -1,8 +1,11 @@
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(iWasBornLongTimeAgo("MAY 17 1997"));
+        Calendar calendar = new GregorianCalendar(1997, Calendar.MAY, 17);
+            Date date = calendar.getTime();
+            System.out.println(date);
+        }
     }
-    public static String iWasBornLongTimeAgo(String bornDate) {
-        return bornDate;
-    }
-}
