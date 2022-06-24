@@ -1,13 +1,11 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
-    @org.junit.jupiter.api.Test
-    void main() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void getVolume() {
-        assertEquals(100000, Main.getVolume(10, 2, 5), 0);
+    @Test
+    void compareTest() {
+        assertEquals(150000, Main.getVolume(10, 5, 3));
     }
 }
