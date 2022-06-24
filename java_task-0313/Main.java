@@ -1,14 +1,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        String[][] words = new String[3][6];
-        words[1][1] = "мамаМылаРаму";
-        words[1][2] = "мылаМамаРаму";
-        words[1][3] = "мамаРамуМыла";
-        words[2][4] = "рамуМылаМама";
-        words[2][5] = "рамуМамаМыла";
-        words[2][6] = "мылаРамуМама";
-        System.out.println(words);
+        String a = "Мама";
+        String b = "Мыла";
+        String c = "Раму";
+        String temp;
+        for (int i = 0; i < 6; i++) {
+            temp = a;
+            a = b;
+            b = c;
+            c = temp;
+            System.out.println(a + b + c);
+        }
+
+
     }
 }
-//доделаю завтра
+
