@@ -1,16 +1,22 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.sun.tools.javac.main.Option.S;
-import static org.junit.jupiter.api.Assertions.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MainTest {
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
-    @Test
-    void main() {
+    @BeforeEach
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outputStreamCaptor));
     }
 
     @Test
-    void printString() {
-        assertEquals("Olla world", Main.printString(String.valueOf(S)));
+    void writeToConsole() {
+        Main.printString("Hello world");
+        assertEquals("Hello world", outputStreamCaptor.toString());
     }
 }

@@ -1,14 +1,7 @@
+
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println(getVolume(25, 5, 2));
+            System.out.println(1 + 2 * (3 + 4 * 5 + 6 * 7 + 8 * 9 + 10 * 11 + 12 * 13 + 14 )+ 15);
+        }
     }
-
-    public static int getVolume(int a, int b, int c) {
-        int volume = a * b * c*1000;
-        int vol = 0;
-         if (volume > 0)
-             vol = volume;
-        return vol;
-    }
-}
+    

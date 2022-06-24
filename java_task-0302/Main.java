@@ -1,11 +1,11 @@
 
-
 public class Main {
     public static void main(String[] args) {
-        printString("Olla world");
+        printString("Hello world");
     }
-    public static String  printString(String S) {
-        System.out.println(S);
-        return S;
+
+    public static void printString(String S) {
+        System.out.print(S);
     }
 }
+
