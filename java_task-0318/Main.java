@@ -7,7 +7,9 @@ public class Main {
         String y = console.nextLine();
         System.out.println("Write the number");
         int x = console.nextInt();
-        System.out.println(y + " take over the world in " + x + " years.Ha-ha-ha");
+        printOut(y, x);
+    }
+    public static void printOut(String y, int x) {
+        System.out.print(y + " take over the world in " + x + " years.Ha-ha-ha");
     }
 }
-
