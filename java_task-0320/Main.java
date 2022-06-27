@@ -5,7 +5,9 @@ public class Main {
         Scanner console = new Scanner(System.in);
         System.out.println("Write the name");
         String y = console.nextLine();
-        System.out.println(y+ "'s payment is $5000. ha-ha-ha");
+        printOut(y);
+    }
+    public static void printOut(String y) {
+        System.out.print(y+ "'s payment is $5000. ha-ha-ha");
     }
 }
-
