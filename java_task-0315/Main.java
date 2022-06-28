@@ -1,6 +1,11 @@
 
 public class Main {
     public static void main(String[] args) {
+        String a = " ";
+        printOut(a);
+    }
+
+    public static void printOut(String a) {
         Colors color1 = new Colors("RED");
         System.out.println(color1);
         Colors color2 = new Colors("ORANGE");
