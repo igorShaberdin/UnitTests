@@ -1,7 +1,11 @@
 
 public class Main {
     public static void main(String[] args) {
-            System.out.println(1 + 2 * (3 + 4 * 5 + 6 * 7 + 8 * 9 + 10 * 11 + 12 * 13 + 14 )+ 15);
-        }
+        int numbers = 3;
+        printOut(numbers);
     }
-    
+    public static void printOut(int a) {
+        System.out.print((1 + 2 * (a + 4 * 5 + 6 * 7 + 8 * 9 + 10 * 11 + 12 * 13 + 14 )+ 15));
+    }
+}
+//07

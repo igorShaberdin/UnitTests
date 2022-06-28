@@ -1,7 +1,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("日本語");
+        String words = "日本語";
+        printOut(words);
+    }
+    public static void printOut(String a) {
+        System.out.print(a);
     }
 }
-
