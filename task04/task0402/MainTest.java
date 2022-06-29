@@ -14,7 +14,7 @@ class MainTest {
     }
     @Test
     void printOut() {
-        Main.Person.adjustAge(30);
-        assertEquals("Adjusted Age is: 50\n", outContent.toString());
+        Main.Apple.addPrice(0);
+        assertEquals("Apples price is 0\n", outContent.toString());
     }
 }
