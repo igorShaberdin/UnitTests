@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -9,33 +10,37 @@ public class Main {
 
     public static class inTrend {
         public static void checkNumber(int a) {
-            if(a == 1) {
-                System.out.print("Monday");
+            switch (a) {
+                case 1:
+                    System.out.print("Monday");
+                    break;
+                case 2:
+                    System.out.print("Tuesday");
+                    break;
+                case 3:
+                    System.out.print("Wednesday");
+                    break;
+                case 4:
+                    System.out.print("Thursday");
+                    break;
+                case 5:
+                    System.out.print("Friday");
+                    break;
+                case 6:
+                    System.out.print("Saturday");
+                case 7:
+                    System.out.print("Sunday");
+                    break;
             }
-            else if(a == 2 ) {
-                System.out.print("Tuesday");
-            }
-            else if(a == 3 ) {
-                System.out.print("Wednesday");
-            }
-            else if(a == 4 ) {
-                System.out.print("Thursday");
-            }
-            else if(a == 5 ) {
-                System.out.print("Friday");
-            }
-            else if(a == 6 ) {
-                System.out.print("Saturday");
-            }
-            else if(a == 7 ) {
-                System.out.print("Sunday");
-            }
-            else {
+            if (a > 7 || a < 0){
                 System.out.print("There is no week's day");
             }
         }
     }
 }
+
+
+
 
 
 
