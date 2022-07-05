@@ -13,7 +13,7 @@ class MainTest {
     @Test
     void printOut() {
         Main.bioPerson();
-        assertEquals("Person{name='Garold', age=25, address='null', sex=m}", outContent.toString());
+        assertEquals("Person{name='Garold', age=25, sex=m}", outContent.toString());
     }
 }
 

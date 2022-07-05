@@ -10,6 +10,7 @@ public class Person {
         this.address = address;
         this.sex = sex;
     }
+
     @Override
     public String toString() {
         return "Person{" +
